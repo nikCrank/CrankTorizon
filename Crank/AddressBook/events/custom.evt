@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eventdefinitions>
+  <event name="gre.animate.complete.hide_notes" type="0x8">
+    <label>hide_notes animation complete</label>
+    <description>The animation named hide_notes has completed</description>
+  </event>
+  <event name="gre.animate.complete.show_notes" type="0x8">
+    <label>show_notes animation complete</label>
+    <description>The animation named show_notes has completed</description>
+  </event>
+  <event name="gre.animate.stop.hide_notes" type="0x8">
+    <label>hide_notes animation stopped</label>
+    <description>The animation named hide_notes has been stopped</description>
+  </event>
+  <event name="gre.animate.stop.show_notes" type="0x8">
+    <label>show_notes animation stopped</label>
+    <description>The animation named show_notes has been stopped</description>
+  </event>
+</eventdefinitions>
