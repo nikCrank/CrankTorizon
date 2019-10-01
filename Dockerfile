@@ -7,9 +7,8 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
     && apt-mark hold dash && apt-get -y upgrade && apt-mark unhold dash \
     && apt-get clean && apt-get autoremove && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir /Crank
+RUN mkdir -p /usr/Crank
 
-#COPY --chown=777 Crank /Crank/
+COPY --chown=777 Crank /usr/Crank/
 
-#CMD /Crank/launch_sbengine.sh /Crank/AddressBook/AddressBook.gapp
-#CMD ["/Crank/launch_sbengine.sh"]
+CMD /usr/Crank/launch_sbengine.sh /usr/Crank/AddressBook/AddressBook.gapp
